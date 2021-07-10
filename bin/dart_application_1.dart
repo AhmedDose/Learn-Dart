@@ -67,14 +67,115 @@ void main(List<String> arguments) {
 // collaction For ....  collaction If
   var promo = true;
 
-
 // Writing conditional and loops
   List<String> listString = ['aa', 'bb', (promo) ? 'cc' : 'dd'];
 
-  print(listString);
+  // print(listString);
 
   // var listinite1 = [1, 2, 3, 4, 5];
-// Merging the elements of two matrices
+  // Merging the elements of two matrices
   // var listinite2 = ['EE ', for (var i in listinite1) 'A$i'];
   // print(listinite2);
+
+// declaring Set
+  var roeg = {'android', 'ios', 'flutter'};
+
+  Set<String> roeg2 = const {'android', 'ios', 'flutter'};
+
+  Set roeg3 = <String>{};
+
+  roeg3.add('php');
+  roeg3.addAll(roeg);
+
+  // print(roeg3.length);
+  // print(roeg3);
+
+  // Dart Map Data type
+
+// Key type and value can be specified, and they can be random
+
+  var map1 = {'key': 'vale 1', 'key2': 'vale2'};
+
+  Map<String, String> map11 = {'key': 'vale 1', 'key2': 'vale2'};
+
+  Map map111 = {'key': 1, 'key2': 'vale2'};
+  var map2 = Map();
+
+  map2['key'] = 'vale1';
+  // print(map1['key']);
+
+  // Map<int, Map<String, int>> student = {
+  //   2: {'ahmed': 66},
+  //   3: {'moode': 55},
+  //   4: {'demo': 44},
+  //   5: {'coler': 33},
+  // };
+
+  var student = {
+    2: {
+      'ahmed': [66, 11, 88]
+    },
+    3: {'moode': 55},
+    4: {'demo': 44},
+    5: {'coler': 33},
+  };
+
+  var student2 = {
+    6: {'nana': 15},
+    7: {'nano': 25},
+    8: {'nandd': 35},
+    ...student
+  };
+// The more you choose the closest type, the more you get the desired value
+  // print(student[2]['ahmed']);
+  // print(student[3]['moode']);
+  // print(student[5]);
+  // print(student2.keys);
+  // Focus on the object's options
+
+  //  Dart Runes Alaska code
+// Dart Runes Example
+  var myname = 'Ahmed Dose';
+
+  // print(myname.codeUnits);
+  // print('d'.codeUnits);
+
+  var myname2 = 'Ahmed Sdml';
+
+  for (var c in myname2.runes) {
+    // print(c);
+    // print(String.fromCharCode(c));
+  }
+  // Print the number and show the character
+  var sdd = 111;
+
+  // print(myname2.codeUnits);
+  // print(String.fromCharCode(sdd));
+
+  var faceUnsmail = '\u{1F60D}';
+
+  // print(faceUnsmail);
+
+  // Dart Enumeration
+
+  var sett = Days.sun;
+  // Days.values.forEach((v) {
+  //   print('vale $v index :${v.index}');
+  // });
+
+
+
+
+
+
+
+
+  
+}
+
+enum Days {
+  satar,
+  sun,
+  man,
+  tews,
 }
