@@ -179,7 +179,46 @@ void main(List<String> arguments) {
 // The connection of a function with another function
   var intp = MyintP;
   // intp(3);
-  
+
+  var xx = 10;
+  var yy = 20;
+// The result will print true or false
+  // print(xx>=yy);
+  // print(xx==yy);
+  // print(xx!=yy);
+  // print(xx>=yy);
+
+  var st1 = Student();
+  var tec1 = Teatcher();
+// is :It means that he belongs or is from him or of its kind
+  // print(st1 is Student);
+  // print(st1 is! Student);
+
+  // as It is also used for comparison
+
+  // print((st1 as Student).name = 'ahmed');
+
+  // ?? : If the value of the element or the variable is empty, replace it with the following value
+
+  var xvb;
+  var xvb2 = 10;
+  xvb ??= 10;
+  // print(xvb);
+
+  // print(xvb2 += 2);
+  // print(xvb2 *= 2);
+  // -- print(xvb2 /= 2);
+  // print(xvb2 ~/= 2);
+  // print(xvb2 -= 2);
+
+}
+
+class Student {
+  String name;
+}
+
+class Teatcher {
+  String name;
 }
 
 void MyintP(int x) => print(x);
