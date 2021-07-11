@@ -163,14 +163,45 @@ void main(List<String> arguments) {
   //   print('vale $v index :${v.index}');
   // });
 
+  // Dart function parameters
+  // A parameter can be added or not, and it will work in both cases
 
+  // add("Ahmed", 5, "ddd");
 
+  // add2(t: true, x: 'aaaa', y: 100);
+  // print(add3());
 
+  var corsers = ['android', 'flutter', 'dart'];
+  // corsers.forEach(printItem1);
 
-
-
-
+  // ***
+// The function can be stored inside a variable and given values later
+// The connection of a function with another function
+  var intp = MyintP;
+  // intp(3);
   
+}
+
+void MyintP(int x) => print(x);
+
+// When you see an error when placing a value .. delete the value and review the code
+void printItem1(String element) {
+  print("You Corses $element");
+}
+
+// position parametat
+void add(String mess, [int num, String xName]) {
+  print(mess + ' $num' + ' $xName');
+}
+
+// Fill in the parameter randomly
+void add2({String x, int y, bool t}) {
+  print(x + ' $y' + ' $t');
+}
+
+// If you don't want to fill in values or set a default value قيمة
+add3({String x = 'X', int y = 0, bool t = true}) {
+  return (x + ' $y' + ' $t');
 }
 
 enum Days {
