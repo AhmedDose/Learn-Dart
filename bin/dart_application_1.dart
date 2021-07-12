@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(List<String> arguments) {
   dynamic zz = 55;
   const int x = -5;
@@ -210,8 +212,70 @@ void main(List<String> arguments) {
   // -- print(xvb2 /= 2);
   // print(xvb2 ~/= 2);
   // print(xvb2 -= 2);
+// ??  : If the value is empty, replace it with the following value
+  var n;
+  // print(playName(n));
+// Make the user enter a value on the console screen
+  // var gg = stdin.readLineSync() as int;
+  // print(gg);
+// Make the user enter a value
+  stdout.write("Enter your name : ");
+  // var name = stdin.readLineSync();
+  // stdout.write(name);
+
+  // String ght = 'f';
+  // ght = ght.toUpperCase();
+  // switch (ght) {
+  //   case 'A':
+  //     print('A');
+  //     break;
+
+  //   case 'B':
+  //     print('C');
+  //     break;
+
+  //   case 'C':
+  //     print('C');
+  //     break;
+  //   default:
+  //     print('default');
+  // }
+// Writing the code correctly is what fixes errors
+  var message1 = StringBuffer('Dart is Fun');
+  var i = 0;
+// Murad text printed on each iteration
+
+  // for (; i <= 5; i++) message1.write('!');
+  // {
+  //   print(message1);
+  // }
+
+// A function inside a second function
+  var collBack = [];
+  // for (var i = 0; i < 5; i++) {
+  //   collBack.add(() => print(i));
+  // }
+  // collBack.forEach((e) => e());
+
+  var collBack2 = ['anroid', 'ios', 'dart'];
+  // collBack2.forEach((element) {
+  //   print(element);
+  // });
+
+  // ****
+
+  // for (var corses in collBack2) print(corses);
+
+
+
+
+
 
 }
+
+// If the value is empty, replace it with the following value
+// The command must be processed inside the function
+String playName(String name) => name ?? 'null Name';
 
 class Student {
   String name;
