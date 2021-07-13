@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'Point.dart';
+
 void main(List<String> arguments) {
   dynamic zz = 55;
   const int x = -5;
@@ -219,7 +221,8 @@ void main(List<String> arguments) {
   // var gg = stdin.readLineSync() as int;
   // print(gg);
 // Make the user enter a value
-  stdout.write("Enter your name : ");
+
+  // stdout.write("Enter your name : ");
   // var name = stdin.readLineSync();
   // stdout.write(name);
 
@@ -266,11 +269,91 @@ void main(List<String> arguments) {
 
   // for (var corses in collBack2) print(corses);
 
+  var contre1 = 20;
+  // It will be printed forever
+  // while (contre1 < 5) {
+  //   print(contre1);
+  //   contre1++;
+  // }
+// It first performs the condition and then compares
 
+// ***********
+  // do {
+  //   print(contre1);
+  //   i++;
+  // } while (contre1 < 5);
 
+  // String myName;
+  // assert(myName != null);
 
+  // try {
 
+  // } catch (e) {
+  //   return e;
+  // }
+// Putting a function inside the class. This leads to the fact that the function can only be accessed from the class, and it is not modified except within the class.
+  Teatcher t1 = Teatcher();
+  t1.registerTetcher('ahmed', 22);
 
+  Student s11 = Student();
+
+  s11.name = 'mode';
+  s11.id = 50;
+  // s11.display();
+
+  var st21 = Student2('dose', 10);
+  // st21.info();
+
+  var st33 = Student3.fromJsonn({
+    'name': 'Ahmeeed',
+    'adress': 'noull',
+  });
+
+  // st33.info();
+
+  var p1 = Point({'x': 3, 'y': 5});
+  // Valuable rehabilitation
+  var p2 = Point.fromXais(10);
+  // p2.infoprint();
+  // p1.infoprint();
+
+  var mt1 = ImmutablePoint(10, 15);
+  mt1.infoprint();
+}
+
+class Student3 {
+  String name;
+  String adress;
+  Student3(this.name, this.adress);
+  // Named Constructors
+  // Named Constructors ... is used to create more than one Constructors
+
+  Student3.fromJsonn(Map<String, String> json) {
+    this.name = json['name'];
+    this.adress = json['adress'];
+  }
+
+  void info() {
+    print('${name} ${adress}');
+  }
+}
+
+class Student2 {
+  String name;
+  int agr;
+  // constructors .. are called inside the class and executed immediately when an object is created
+  // *****
+  // Student2(String name, int agr) {
+  //   this.name = name;
+  //   this.agr = agr;
+  //   print('Student2');
+  // }
+// Abbreviation of writing constructors
+  Student2(this.name, this.agr);
+
+  void info() {
+    print('${this.name} ${this.agr}');
+  }
 }
 
 // If the value is empty, replace it with the following value
@@ -278,11 +361,23 @@ void main(List<String> arguments) {
 String playName(String name) => name ?? 'null Name';
 
 class Student {
+  registerStudent(String name, int age) {}
+
+  UpdeteStudent(int id) {}
   String name;
+  int id;
+
+  void display() {
+    print('${this.name} ${this.id}');
+  }
 }
 
 class Teatcher {
+  registerTetcher(String name, int age) {}
+
+  UpdeteTetcher(int id) {}
   String name;
+  int id;
 }
 
 void MyintP(int x) => print(x);
