@@ -1,6 +1,9 @@
 import 'dart:io';
 
+import 'Lesson5/Tetcher5.dart';
+import 'Lesson5/student5.dart';
 import 'Point.dart';
+import 'student4.dart';
 
 void main(List<String> arguments) {
   dynamic zz = 55;
@@ -318,7 +321,32 @@ void main(List<String> arguments) {
   // p1.infoprint();
 
   var mt1 = ImmutablePoint(10, 15);
-  mt1.infoprint();
+  // mt1.infoprint();
+
+  var st4 = Student4();
+  st4.name = 'aaaa';
+
+  // st4.setAge(15);
+  // print(st4.getAge());
+
+  st4.age = 15;
+
+  // print(st4.agee);
+  // st4.info();
+
+  var st5 = Student5();
+
+  st5.name = 'ahmeed';
+  st5.age = 11;
+  // st5.info();
+
+  var te5 = Tetcher5();
+  te5.name = 'ahmed maod';
+  te5.age = 15;
+  te5.department = 'arabic';
+
+  
+  print(te5.info());
 }
 
 class Student3 {
