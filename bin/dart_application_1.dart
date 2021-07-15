@@ -357,6 +357,7 @@ void main(List<String> arguments) {
 //  We call it normally and it is printed
   // print(p6);
 // It is not useful to take an object from it because it is a hereditary class
+  // It is made to inherit the characteristics it possesses
   // var an1 = Animal();
 
   var loin1 = Lion1();
