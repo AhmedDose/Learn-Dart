@@ -1,7 +1,12 @@
 import 'dart:io';
 
+import 'Lasson6/manegar.dart';
+import 'Lasson6/person.dart';
 import 'Lesson5/Tetcher5.dart';
 import 'Lesson5/student5.dart';
+import 'Lesson7/anemuls.dart';
+import 'Lesson7/fish.dart';
+import 'Lesson7/liner.dart';
 import 'Point.dart';
 import 'student4.dart';
 
@@ -345,8 +350,26 @@ void main(List<String> arguments) {
   te5.age = 15;
   te5.department = 'arabic';
 
-  
-  print(te5.info());
+  // print(te5.info());
+
+  var p6 = Person6('ahmeddd');
+  var m6 = Mamger('mohameed');
+//  We call it normally and it is printed
+  // print(p6);
+// It is not useful to take an object from it because it is a hereditary class
+  // var an1 = Animal();
+
+  var loin1 = Lion1();
+  var fash1 = Fish();
+
+  loin1.eat();
+  loin1.mov();
+  loin1.sleep();
+  print('------------------');
+   fash1.eat();
+  fash1.mov();
+  fash1.sleep();
+
 }
 
 class Student3 {
