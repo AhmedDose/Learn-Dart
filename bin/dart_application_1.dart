@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'Lasson6/manegar.dart';
 import 'Lasson6/person.dart';
+import 'Lesson 8/lion.dart';
+import 'Lesson 9/point9.dart';
 import 'Lesson5/Tetcher5.dart';
 import 'Lesson5/student5.dart';
 import 'Lesson7/anemuls.dart';
@@ -363,14 +365,24 @@ void main(List<String> arguments) {
   var loin1 = Lion1();
   var fash1 = Fish();
 
-  loin1.eat();
-  loin1.mov();
-  loin1.sleep();
-  print('------------------');
-   fash1.eat();
-  fash1.mov();
-  fash1.sleep();
+  var loin8 = Lion();
 
+  var point91 = Point9(10, 22);
+  var point92 = Point9(10, 22);
+  var point93 = Point9(10, 22);
+// How to collect more than one object
+  var point95 = point92 + point93;
+
+  print(point91.toString());
+  // loin8.eat();
+
+  // loin1.eat();
+  // loin1.mov();
+  // loin1.sleep();
+  // print('------------------');
+  //  fash1.eat();
+  // fash1.mov();
+  // fash1.sleep();
 }
 
 class Student3 {

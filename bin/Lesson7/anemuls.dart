@@ -1,5 +1,3 @@
-
-
 //abstract : Algebra when used is to use or fill certain functions
 // It is made to inherit the characteristics it possesses
 abstract class Animal {
@@ -10,6 +8,5 @@ abstract class Animal {
   drink() {
     // concrete method
     print('i am get ');
-
   }
 }
